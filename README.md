@@ -38,10 +38,30 @@
 - karma——前端自动化测试工具 
 
 ##### uglify js压缩代码
--  npm install grunt-contrib-uglify --save-dev
+- npm install grunt-contrib-uglify --save-dev
 - 在src中添加test.js 文件 随便写一些代码
 - 在 grunt.initConfig 中配置压缩信息
 - 加载相应插件
 - 在registerTask 添加插件信息
 - 执行grunt命令 会生成相应的文件
 
+##### jshint js语法检查
+- npm install grunt-contrib-jshint --save-dev
+<code>
+{
+	"boss": false,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"expr": true,
+	"immed": true,
+	"newcap": true,
+	"noempty": true,
+	"noarg": true,
+	"undef": true,
+	"regexp": true,
+	"browser": true,
+	"devel": true,
+	"node": true
+}
+</code>
